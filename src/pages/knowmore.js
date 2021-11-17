@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import Assist from '../components/Assistencia'
+import KnowMore from '../components/KnowMore/more'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer';
 
-const AssistPage = () => {
+const KnowMorePage = () => {
     const[isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -15,10 +15,10 @@ const AssistPage = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <Assist />
+      <KnowMore />
       <Footer />
     </>
   )
 }
 
-export default AssistPage
+export default KnowMorePage
